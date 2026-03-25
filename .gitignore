@@ -1,18 +1,60 @@
-# Python
+# ─── Python ───────────────────────────────────────────────
 venv/
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
 
-# Node
+# ─── Node / Frontend ──────────────────────────────────────
 node_modules/
 dist/
+dist-ssr/
+*.local
 
 # Vite cache
-node_modules/.vite/
+.vite/
 
-# Environment files
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ─── Environment & Secrets ────────────────────────────────
 .env
+.env.*
+!.env.example
 
-# OS
+# ─── Heavy / Binary Model Files ───────────────────────────
+# ONNX model binaries (large ML model files)
+*.onnx
+
+# Pickle / calibration data files
+*.pkl
+
+# ─── Calibration Image Datasets ───────────────────────────
+# Large image sets used for camera calibration — not needed in repo
+turret/distance_calc_images/
+
+# ─── OS & Editor ──────────────────────────────────────────
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# VSCode (keep extensions recommendation, ignore settings)
+.vscode/*
+!.vscode/extensions.json
+
+# JetBrains IDEs
+.idea/
+
+# ─── Misc ─────────────────────────────────────────────────
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
