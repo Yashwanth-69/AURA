@@ -1,4 +1,6 @@
 # AURA — Assited User-Robot Alliance
+Youtube link for Prototype - [https://www.youtube.com/watch?v=HphVVC44Uyk]
+
 
 AURA is a real-time face-tracking turret system that uses **stereo vision** (two cameras) to calculate the 3D position of a detected face and automatically aim a laser/servo-based turret at it using an Arduino. A **React + Vite** web frontend provides a live control dashboard with three operating modes.
 
